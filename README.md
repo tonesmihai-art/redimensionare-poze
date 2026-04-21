@@ -1,0 +1,1 @@
+# redimensionare-poze
