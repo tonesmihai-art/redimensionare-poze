@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <title>PWA Icon Studio (Local)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 1rem; }
+    .row { margin-bottom: 1rem; }
+    #preview { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .icon-card { text-align: center; font-size: 12px; }
+    .icon-card img { display: block; border: 1px solid #ccc; margin-bottom: 0.25rem; }
+    button { padding: 0.4rem 0.8rem; }
+  </style>
+</head>
+<body>
+  <h1>PWA Icon Studio (Local)</h1>
+
+  <div class="row">
+    <input type="file" id="fileInput" accept="image/*" />
+  </div>
+
+  <div class="row">
+    <button id="generateBtn" disabled>Generează icon‑uri</button>
+    <button id="exportBtn" disabled>Export ZIP</button>
+  </div>
+
+  <div class="row">
+    <strong>Preview icon‑uri:</strong>
+    <div id="preview"></div>
+  </div>
+
+  <script type="module" src="./icon-studio-local.js"></script>
+</body>
+</html>
