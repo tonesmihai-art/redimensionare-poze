@@ -4,7 +4,9 @@ const ASSETS = [
   "./index.html",
   "./icon-studio-local.js",
   "./zip-writer.js",
-  "./manifest.json"
+  "./manifest.json",
+  "./icon-192.png",
+  "./icon-512.png"
 ];
 
 self.addEventListener("install", event => {
