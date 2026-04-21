@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+
   <meta charset="UTF-8" />
   <title>PWA Icon Studio (Local)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,4 +35,14 @@
 
   <script type="module" src="./icon-studio-local.js"></script>
 </body>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js")
+        .catch(err => console.error("SW error:", err));
+    });
+  }
+</script>
+
 </html>
